@@ -5,61 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Technology Blog</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f8ff;
-            color: #333;
-        }
-        header {
-            background-color: #ff6347;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            justify-content: space-around;
-            background-color: #4682b4;
-            padding: 10px;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .content {
-            padding: 20px;
-        }
-        h2 {
-            color: #4682b4;
-        }
-        .blog-post {
-            background-color: #ffffff;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #ff6347;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .blog-post:hover {
-            background-color: #f5f5f5;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -68,11 +14,13 @@
         <p>Sharing the latest trends, tips, and innovations in technology!</p>
     </header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#posts">Blog Posts</a>
-        <a href="#contact">Contact</a>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#posts">Blog Posts</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
 
     <div class="content">
@@ -91,10 +39,12 @@
             <div class="blog-post">
                 <h3>Post Title 1</h3>
                 <p>This is a preview of my first blog post. I’ll discuss the latest advancements in artificial intelligence.</p>
+                <button class="read-more">Read More</button>
             </div>
             <div class="blog-post">
                 <h3>Post Title 2</h3>
                 <p>Exploring the best practices for web development in 2024. A must-read for all developers.</p>
+                <button class="read-more">Read More</button>
             </div>
         </section>
 
@@ -105,8 +55,9 @@
     </div>
 
     <footer>
-        <p>© 2024 Gladstone Rose Technology Blog (Quality Solutions Limited) | All rights reserved.</p>
+        <p>© 2024 My Technology Blog | All rights reserved.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
